@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package something.v1;
+
+// MEMO: Uncomment when generate with protoc
+// option go_package = "github.com/dojineko/buf-sample/buf-generate/protobuf/gen/go";
+
+import "something/v1/dummy_x.proto";
+
+message DummyY {
+  DummyX dummy_x = 1;
+}

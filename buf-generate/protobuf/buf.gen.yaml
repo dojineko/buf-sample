@@ -1,0 +1,20 @@
+version: v1
+managed:
+  # Enable buf managed mode
+  enabled: true
+  go_package_prefix:
+    # Default value when option go_package is not specified
+    default: github.com/dojineko/buf-sample/buf-generate/protobuf/gen/go
+plugins:
+    # go-protoc-gen-doc configuration
+  - name: doc
+    out: gen/docs/protobuf
+    opt: markdown,README.md,source_relative
+    # go-protoc-gen-go configuration
+  - name: go
+    out: gen/go
+    opt: paths=source_relative
+    # go-protoc-gen-go-grpc configuration
+  - name: go-grpc
+    out: gen/go
+    opt: paths=source_relative
