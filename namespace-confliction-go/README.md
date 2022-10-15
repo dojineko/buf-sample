@@ -27,7 +27,7 @@ See https://developers.google.com/protocol-buffers/docs/reference/go/faq#namespa
 This version changes the structure of the foo and baz proto directories to a structure consisting of package name and version number to eliminate namespace conflicts.
 
 ```sh
-cd reproduction
+cd fixed
 make dev
 
 # You will probably get a message like this.
