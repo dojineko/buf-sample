@@ -11,7 +11,7 @@ This is an example of applying a setting to buf that produces the same result as
 
 Execute the following command line under the protobuf directory.
 
-**HINT:** If you use protoc, you must uncomment the `option go_package ...` line in the proto file must be uncommented.
+**HINT:** If you use protoc, you must uncomment the `option go_package ...` line in the proto file.
 
 ```sh
 # move to workspace
