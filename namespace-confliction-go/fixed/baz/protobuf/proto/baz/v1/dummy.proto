@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package baz.v1;
+
+message BazServiceHelloRequest {}
+message BazServiceHelloResponse {}
+
+service BazService {
+  rpc Hello(BazServiceHelloRequest) returns (BazServiceHelloResponse);
+}
